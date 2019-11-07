@@ -16,6 +16,8 @@
 		4694603A2373A0A500831E18 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460392373A0A500831E18 /* BaseTabBarController.swift */; };
 		4694603D2373A9C300831E18 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694603C2373A9C300831E18 /* AppsSearchController.swift */; };
 		469460402373AE7400831E18 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694603F2373AE7400831E18 /* SearchResultCell.swift */; };
+		4694604323742CDB00831E18 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694604223742CDB00831E18 /* UIView+Layout.swift */; };
+		469460452374312800831E18 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460442374312800831E18 /* VerticalStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		469460392373A0A500831E18 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		4694603C2373A9C300831E18 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
 		4694603F2373AE7400831E18 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		4694604223742CDB00831E18 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		469460442374312800831E18 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		4694602423739EC200831E18 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				4694604123742C9200831E18 /* Helpers */,
 				4694603E2373AE3400831E18 /* Views */,
 				4694603B2373A9A500831E18 /* Controller */,
 				4694602523739EC200831E18 /* AppDelegate.swift */,
@@ -90,6 +95,15 @@
 				4694603F2373AE7400831E18 /* SearchResultCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4694604123742C9200831E18 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4694604223742CDB00831E18 /* UIView+Layout.swift */,
+				469460442374312800831E18 /* VerticalStackView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +182,8 @@
 				4694602623739EC200831E18 /* AppDelegate.swift in Sources */,
 				4694603D2373A9C300831E18 /* AppsSearchController.swift in Sources */,
 				469460402373AE7400831E18 /* SearchResultCell.swift in Sources */,
+				469460452374312800831E18 /* VerticalStackView.swift in Sources */,
+				4694604323742CDB00831E18 /* UIView+Layout.swift in Sources */,
 				4694602823739EC200831E18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
