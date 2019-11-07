@@ -13,6 +13,7 @@
 		4694602D23739EC200831E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4694602B23739EC200831E18 /* Main.storyboard */; };
 		4694602F23739EC400831E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4694602E23739EC400831E18 /* Assets.xcassets */; };
 		4694603223739EC400831E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4694603023739EC400831E18 /* LaunchScreen.storyboard */; };
+		4694603A2373A0A500831E18 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460392373A0A500831E18 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4694602E23739EC400831E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4694603123739EC400831E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4694603323739EC400831E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469460392373A0A500831E18 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4694602E23739EC400831E18 /* Assets.xcassets */,
 				4694603023739EC400831E18 /* LaunchScreen.storyboard */,
 				4694603323739EC400831E18 /* Info.plist */,
+				469460392373A0A500831E18 /* BaseTabBarController.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4694603A2373A0A500831E18 /* BaseTabBarController.swift in Sources */,
 				4694602A23739EC200831E18 /* ViewController.swift in Sources */,
 				4694602623739EC200831E18 /* AppDelegate.swift in Sources */,
 				4694602823739EC200831E18 /* SceneDelegate.swift in Sources */,
@@ -293,7 +297,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusrovari.AppStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusrovari.AppStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
