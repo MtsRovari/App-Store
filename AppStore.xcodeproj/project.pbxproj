@@ -18,6 +18,7 @@
 		469460402373AE7400831E18 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694603F2373AE7400831E18 /* SearchResultCell.swift */; };
 		4694604323742CDB00831E18 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694604223742CDB00831E18 /* UIView+Layout.swift */; };
 		469460452374312800831E18 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460442374312800831E18 /* VerticalStackView.swift */; };
+		469460482374F87000831E18 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460472374F87000831E18 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4694603F2373AE7400831E18 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		4694604223742CDB00831E18 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		469460442374312800831E18 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		469460472374F87000831E18 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		4694602423739EC200831E18 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
+				469460462374F85200831E18 /* Model */,
 				4694604123742C9200831E18 /* Helpers */,
 				4694603E2373AE3400831E18 /* Views */,
 				4694603B2373A9A500831E18 /* Controller */,
@@ -104,6 +107,14 @@
 				469460442374312800831E18 /* VerticalStackView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		469460462374F85200831E18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				469460472374F87000831E18 /* SearchResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4694603A2373A0A500831E18 /* BaseTabBarController.swift in Sources */,
+				469460482374F87000831E18 /* SearchResult.swift in Sources */,
 				4694602A23739EC200831E18 /* ViewController.swift in Sources */,
 				4694602623739EC200831E18 /* AppDelegate.swift in Sources */,
 				4694603D2373A9C300831E18 /* AppsSearchController.swift in Sources */,
