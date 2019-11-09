@@ -3,4 +3,70 @@
    uuid = "D0CFAD03-1034-4425-87DF-127AB12E0C50"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0F52339-F649-4D8F-927E-7D473F21436D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppStore/Service/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchApps(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5BA0091-80DF-44CD-90BB-7A8EA695A980"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppStore/Controller/AppsSearchController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchItunesApps()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B5BA0091-80DF-44CD-90BB-7A8EA695A980 - d527db6ef4fcb258"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppStore.AppsSearchController.(fetchItunesApps in _42B7837F708D0AC1DF42F18C31871CF4)() -&gt; ()"
+                  moduleName = "AppStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusrovari/XcodeProjects/XcodeProjectsGitHub/AppStore/AppStore/Controller/AppsSearchController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "B5BA0091-80DF-44CD-90BB-7A8EA695A980 - 8c6ecaa32247dee4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;AppStore.Result&gt;) -&gt; () in AppStore.AppsSearchController.(fetchItunesApps in _42B7837F708D0AC1DF42F18C31871CF4)() -&gt; ()"
+                  moduleName = "AppStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusrovari/XcodeProjects/XcodeProjectsGitHub/AppStore/AppStore/Controller/AppsSearchController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
