@@ -63,6 +63,7 @@ class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayo
     
     fileprivate var appResults = [Result]()
     
+    //unsed func
     fileprivate func fetchItunesApps() {
         
         Service.shared.fetchApps(searchTerm: "instagram") { (results, error) in
