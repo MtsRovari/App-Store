@@ -24,6 +24,8 @@
 		46FC3B73237871540093FA35 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B72237871540093FA35 /* BaseListController.swift */; };
 		46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B76237873D60093FA35 /* AppsGroupCell.swift */; };
 		46FC3B79237876030093FA35 /* AppsHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B78237876030093FA35 /* AppsHorizontalController.swift */; };
+		46FC3B7B2378BD2D0093FA35 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B7A2378BD2D0093FA35 /* AppRowCell.swift */; };
+		46FC3B7D2378BDD40093FA35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B7C2378BDD40093FA35 /* Extensions.swift */; };
 		D5CE002236C92DC64FAEAA33 /* Pods_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D648E2F00912C32192EDD7FD /* Pods_AppStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		46FC3B72237871540093FA35 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		46FC3B76237873D60093FA35 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
 		46FC3B78237876030093FA35 /* AppsHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHorizontalController.swift; sourceTree = "<group>"; };
+		46FC3B7A2378BD2D0093FA35 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
+		46FC3B7C2378BDD40093FA35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5D9FF854CD51641072FCF87F /* Pods-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.release.xcconfig"; path = "Target Support Files/Pods-AppStore/Pods-AppStore.release.xcconfig"; sourceTree = "<group>"; };
 		D648E2F00912C32192EDD7FD /* Pods_AppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +147,7 @@
 			children = (
 				4694604223742CDB00831E18 /* UIView+Layout.swift */,
 				469460442374312800831E18 /* VerticalStackView.swift */,
+				46FC3B7C2378BDD40093FA35 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				46FC3B76237873D60093FA35 /* AppsGroupCell.swift */,
+				46FC3B7A2378BD2D0093FA35 /* AppRowCell.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -314,9 +320,11 @@
 				469460452374312800831E18 /* VerticalStackView.swift in Sources */,
 				4694604B23757E3D00831E18 /* Service.swift in Sources */,
 				4694604323742CDB00831E18 /* UIView+Layout.swift in Sources */,
+				46FC3B7D2378BDD40093FA35 /* Extensions.swift in Sources */,
 				46FC3B73237871540093FA35 /* BaseListController.swift in Sources */,
 				4694602823739EC200831E18 /* SceneDelegate.swift in Sources */,
 				46FC3B79237876030093FA35 /* AppsHorizontalController.swift in Sources */,
+				46FC3B7B2378BD2D0093FA35 /* AppRowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
