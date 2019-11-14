@@ -38,7 +38,7 @@ class AppsHorizontalController: BaseListController, UICollectionViewDelegateFlow
         
         cell.nameLabel.text = app?.name
         cell.companyLabel.text = app?.artistName
-        cell.imageView.sd_setImage(with: URL(fileURLWithPath: app?.artworkUrl100 ?? ""))
+        cell.imageView.sd_setImage(with: URL(string: app?.artworkUrl100 ?? ""))
         
         return cell
     }
