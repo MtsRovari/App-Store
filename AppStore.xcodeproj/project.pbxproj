@@ -181,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				46FC3B70237870A70093FA35 /* AppsPageController.swift */,
-				46FC3B802378CD270093FA35 /* AppsHeaderHorizontalController.swift */,
 				46FC3B78237876030093FA35 /* AppsHorizontalController.swift */,
+				46FC3B802378CD270093FA35 /* AppsHeaderHorizontalController.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
