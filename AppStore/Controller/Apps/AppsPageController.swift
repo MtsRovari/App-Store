@@ -25,6 +25,7 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
         fetchData()
     }
     
+    var socialApps = [SocialApp]()
     var groups = [AppGroup]()
     
     fileprivate func fetchData() {
@@ -38,7 +39,6 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
         
         dispatchGroup.enter()
         Service.shared.fetchGames { (appGroup, error) in
-            print("Done with games")
             dispatchGroup.leave()
             group1 = appGroup
         }
@@ -46,19 +46,22 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
         dispatchGroup.enter()
         Service.shared.fetchTopGrossing { (appGroup, error) in
             dispatchGroup.leave()
-            print("Done with top grossing")
             group2 = appGroup
         }
         
         dispatchGroup.enter()
         Service.shared.fetchAppGroup(urlString: "https://rss.itunes.apple.com/api/v1/us/ios-apps/top-free/all/25/explicit.json") { (appGroup, error) in
             dispatchGroup.leave()
-            print("Done with free games")
             group3 = appGroup
         }
         
+        dispatchGroup.enter()
+        Service.shared.fetchSocialApps { (apps, error) in
+            dispatchGroup.leave()
+            self.socialApps = apps ?? []
+        }
+        
         dispatchGroup.notify(queue: .main) {
-            print("Completed yout dispatch group task..")
             
             if let group = group1 {
                 self.groups.append(group)
@@ -75,12 +78,16 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! AppsPageHeader
+        
+        header.appHeaderHorizontalController.socialapps = self.socialApps
+        header.appHeaderHorizontalController.collectionView.reloadData()
+        
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return .init(width: view.frame.width, height: 0)
+        return .init(width: view.frame.width, height: 300)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

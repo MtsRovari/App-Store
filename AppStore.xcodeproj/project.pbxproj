@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46149FF7237A409E00AC1287 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46149FF6237A409E00AC1287 /* AppGroup.swift */; };
+		465B5FE7237F73B000BB50DE /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B5FE6237F73B000BB50DE /* SocialApp.swift */; };
 		4694602623739EC200831E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694602523739EC200831E18 /* AppDelegate.swift */; };
 		4694602823739EC200831E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694602723739EC200831E18 /* SceneDelegate.swift */; };
 		4694602A23739EC200831E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694602923739EC200831E18 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		146B10E983C7B8F3EC827107 /* Pods-AppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.debug.xcconfig"; path = "Target Support Files/Pods-AppStore/Pods-AppStore.debug.xcconfig"; sourceTree = "<group>"; };
 		46149FF6237A409E00AC1287 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		465B5FE6237F73B000BB50DE /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 		4694602223739EC200831E18 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4694602523739EC200831E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4694602723739EC200831E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				469460472374F87000831E18 /* SearchResult.swift */,
 				46149FF6237A409E00AC1287 /* AppGroup.swift */,
+				465B5FE6237F73B000BB50DE /* SocialApp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4694603A2373A0A500831E18 /* BaseTabBarController.swift in Sources */,
+				465B5FE7237F73B000BB50DE /* SocialApp.swift in Sources */,
 				46FC3B71237870A70093FA35 /* AppsPageController.swift in Sources */,
 				469460482374F87000831E18 /* SearchResult.swift in Sources */,
 				4694602A23739EC200831E18 /* ViewController.swift in Sources */,
