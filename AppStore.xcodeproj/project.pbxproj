@@ -22,6 +22,7 @@
 		469460452374312800831E18 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460442374312800831E18 /* VerticalStackView.swift */; };
 		469460482374F87000831E18 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469460472374F87000831E18 /* SearchResult.swift */; };
 		4694604B23757E3D00831E18 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694604A23757E3D00831E18 /* Service.swift */; };
+		46F35A142380DAD100509B95 /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A132380DAD100509B95 /* AppDetailController.swift */; };
 		46FC3B71237870A70093FA35 /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B70237870A70093FA35 /* AppsPageController.swift */; };
 		46FC3B73237871540093FA35 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B72237871540093FA35 /* BaseListController.swift */; };
 		46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B76237873D60093FA35 /* AppsGroupCell.swift */; };
@@ -55,6 +56,7 @@
 		469460442374312800831E18 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		469460472374F87000831E18 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		4694604A23757E3D00831E18 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		46F35A132380DAD100509B95 /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
 		46FC3B70237870A70093FA35 /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		46FC3B72237871540093FA35 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		46FC3B76237873D60093FA35 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
@@ -186,9 +188,18 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		46F35A122380DAB600509B95 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				46F35A132380DAD100509B95 /* AppDetailController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		46FC3B6F237870900093FA35 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				46F35A122380DAB600509B95 /* Details */,
 				46FC3B70237870A70093FA35 /* AppsPageController.swift */,
 				46FC3B78237876030093FA35 /* AppsHorizontalController.swift */,
 				46FC3B802378CD270093FA35 /* AppsHeaderHorizontalController.swift */,
@@ -342,6 +353,7 @@
 				46FFF50623804F4500B17EA6 /* HorizontalSnappingController.swift in Sources */,
 				46FFF508238052EE00B17EA6 /* BetterSnappingLayout.swift in Sources */,
 				469460452374312800831E18 /* VerticalStackView.swift in Sources */,
+				46F35A142380DAD100509B95 /* AppDetailController.swift in Sources */,
 				4694604B23757E3D00831E18 /* Service.swift in Sources */,
 				46FC3B812378CD270093FA35 /* AppsHeaderHorizontalController.swift in Sources */,
 				46FC3B7F2378CAC90093FA35 /* AppsPageHeader.swift in Sources */,
