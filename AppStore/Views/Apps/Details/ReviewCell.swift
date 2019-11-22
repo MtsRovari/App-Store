@@ -12,7 +12,7 @@ class ReviewCell: UICollectionViewCell {
     
     let titleLabel = UILabel(text: "Review Title", font: .boldSystemFont(ofSize: 18))
     
-    let authorLabel = UILabel(text: "Author", font: .boldSystemFont(ofSize: 16))
+    let authorLabel = UILabel(text: "Author", font: .systemFont(ofSize: 16))
     
     let startsLabel = UILabel(text: "Stars", font: .boldSystemFont(ofSize: 14))
     
@@ -51,6 +51,7 @@ class ReviewCell: UICollectionViewCell {
         
         titleLabel.setContentCompressionResistancePriority(.init(0), for: .horizontal)
         authorLabel.textAlignment = .right
+        authorLabel.textColor = .gray
         addSubview(stackView)
         stackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 20))
     }
