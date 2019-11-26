@@ -30,6 +30,8 @@
 		46F35A1F2383886A00509B95 /* ReviewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A1E2383886A00509B95 /* ReviewsController.swift */; };
 		46F35A2123838A0200509B95 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A2023838A0200509B95 /* ReviewCell.swift */; };
 		46F35A232386A44A00509B95 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A222386A44A00509B95 /* Reviews.swift */; };
+		46F35A26238CADF100509B95 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A25238CADF100509B95 /* TodayController.swift */; };
+		46F35A29238CAE9A00509B95 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A28238CAE9A00509B95 /* TodayCell.swift */; };
 		46FC3B71237870A70093FA35 /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B70237870A70093FA35 /* AppsPageController.swift */; };
 		46FC3B73237871540093FA35 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B72237871540093FA35 /* BaseListController.swift */; };
 		46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B76237873D60093FA35 /* AppsGroupCell.swift */; };
@@ -71,6 +73,8 @@
 		46F35A1E2383886A00509B95 /* ReviewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsController.swift; sourceTree = "<group>"; };
 		46F35A2023838A0200509B95 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		46F35A222386A44A00509B95 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		46F35A25238CADF100509B95 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
+		46F35A28238CAE9A00509B95 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
 		46FC3B70237870A70093FA35 /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		46FC3B72237871540093FA35 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		46FC3B76237873D60093FA35 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		4694603B2373A9A500831E18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				46F35A24238CADE100509B95 /* Today */,
 				46FC3B74237871A80093FA35 /* Search */,
 				46FC3B6F237870900093FA35 /* Apps */,
 				469460392373A0A500831E18 /* BaseTabBarController.swift */,
@@ -167,6 +172,7 @@
 		4694603E2373AE3400831E18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				46F35A27238CAE8800509B95 /* Today */,
 				46FC3B75237873C40093FA35 /* Apps */,
 				4694603F2373AE7400831E18 /* SearchResultCell.swift */,
 			);
@@ -222,6 +228,22 @@
 				46F35A2023838A0200509B95 /* ReviewCell.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		46F35A24238CADE100509B95 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				46F35A25238CADF100509B95 /* TodayController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		46F35A27238CAE8800509B95 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				46F35A28238CAE9A00509B95 /* TodayCell.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 		46FC3B6F237870900093FA35 /* Apps */ = {
@@ -378,6 +400,7 @@
 				46F35A1B2381CCEA00509B95 /* PreviewScreenshotsController.swift in Sources */,
 				4694602A23739EC200831E18 /* ViewController.swift in Sources */,
 				4694602623739EC200831E18 /* AppDelegate.swift in Sources */,
+				46F35A29238CAE9A00509B95 /* TodayCell.swift in Sources */,
 				4694603D2373A9C300831E18 /* AppsSearchController.swift in Sources */,
 				46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */,
 				469460402373AE7400831E18 /* SearchResultCell.swift in Sources */,
@@ -391,6 +414,7 @@
 				4694604323742CDB00831E18 /* UIView+Layout.swift in Sources */,
 				46F35A1F2383886A00509B95 /* ReviewsController.swift in Sources */,
 				46FC3B7D2378BDD40093FA35 /* Extensions.swift in Sources */,
+				46F35A26238CADF100509B95 /* TodayController.swift in Sources */,
 				46FC3B73237871540093FA35 /* BaseListController.swift in Sources */,
 				46149FF7237A409E00AC1287 /* AppGroup.swift in Sources */,
 				46F35A232386A44A00509B95 /* Reviews.swift in Sources */,
