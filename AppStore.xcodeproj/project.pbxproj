@@ -32,6 +32,8 @@
 		46F35A232386A44A00509B95 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A222386A44A00509B95 /* Reviews.swift */; };
 		46F35A26238CADF100509B95 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A25238CADF100509B95 /* TodayController.swift */; };
 		46F35A29238CAE9A00509B95 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A28238CAE9A00509B95 /* TodayCell.swift */; };
+		46F35A2B238D3C5F00509B95 /* AppFullscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A2A238D3C5F00509B95 /* AppFullscreenController.swift */; };
+		46F35A2D238D3F1B00509B95 /* AppFullscreenDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F35A2C238D3F1B00509B95 /* AppFullscreenDescriptionCell.swift */; };
 		46FC3B71237870A70093FA35 /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B70237870A70093FA35 /* AppsPageController.swift */; };
 		46FC3B73237871540093FA35 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B72237871540093FA35 /* BaseListController.swift */; };
 		46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B76237873D60093FA35 /* AppsGroupCell.swift */; };
@@ -75,6 +77,8 @@
 		46F35A222386A44A00509B95 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		46F35A25238CADF100509B95 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
 		46F35A28238CAE9A00509B95 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		46F35A2A238D3C5F00509B95 /* AppFullscreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullscreenController.swift; sourceTree = "<group>"; };
+		46F35A2C238D3F1B00509B95 /* AppFullscreenDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullscreenDescriptionCell.swift; sourceTree = "<group>"; };
 		46FC3B70237870A70093FA35 /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		46FC3B72237871540093FA35 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		46FC3B76237873D60093FA35 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				46F35A25238CADF100509B95 /* TodayController.swift */,
+				46F35A2A238D3C5F00509B95 /* AppFullscreenController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				46F35A28238CAE9A00509B95 /* TodayCell.swift */,
+				46F35A2C238D3F1B00509B95 /* AppFullscreenDescriptionCell.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -403,11 +409,13 @@
 				46F35A29238CAE9A00509B95 /* TodayCell.swift in Sources */,
 				4694603D2373A9C300831E18 /* AppsSearchController.swift in Sources */,
 				46FC3B77237873D60093FA35 /* AppsGroupCell.swift in Sources */,
+				46F35A2D238D3F1B00509B95 /* AppFullscreenDescriptionCell.swift in Sources */,
 				469460402373AE7400831E18 /* SearchResultCell.swift in Sources */,
 				46FFF50623804F4500B17EA6 /* HorizontalSnappingController.swift in Sources */,
 				46FFF508238052EE00B17EA6 /* BetterSnappingLayout.swift in Sources */,
 				469460452374312800831E18 /* VerticalStackView.swift in Sources */,
 				46F35A142380DAD100509B95 /* AppDetailController.swift in Sources */,
+				46F35A2B238D3C5F00509B95 /* AppFullscreenController.swift in Sources */,
 				4694604B23757E3D00831E18 /* Service.swift in Sources */,
 				46FC3B812378CD270093FA35 /* AppsHeaderHorizontalController.swift in Sources */,
 				46FC3B7F2378CAC90093FA35 /* AppsPageHeader.swift in Sources */,
