@@ -47,6 +47,8 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
         
         self.appFullscreenController = appFullscreenController
         
+        self.collectionView.isUserInteractionEnabled = false
+        
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
         
         //absolute coordinates of cell
@@ -75,6 +77,10 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
             self.view.layoutIfNeeded() // start animation
 
             self.tabBarController?.tabBar.frame.origin.y = self.view.frame.size.height
+            
+            guard let cell = self.appFullscreenController.tableView.cellForRow(at: [0, 0]) as? AppFullscreenHeaderCell else { return }
+            cell.todayCell.topConstraint.constant = 48
+            cell.layoutIfNeeded()
 
         }, completion: nil)
         
@@ -104,9 +110,14 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
                 self.tabBarController?.tabBar.frame.origin.y = self.view.frame.size.height - tabBarFrame.height
             }
             
+            guard let cell = self.appFullscreenController.tableView.cellForRow(at: [0, 0]) as? AppFullscreenHeaderCell else { return }
+            cell.todayCell.topConstraint.constant = 24
+            cell.layoutIfNeeded()
+            
         }, completion: { _ in
             self.appFullscreenController.view?.removeFromSuperview()
             self.appFullscreenController.removeFromParent()
+            self.collectionView.isUserInteractionEnabled = true
         })
     }
     
