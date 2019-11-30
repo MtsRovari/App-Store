@@ -12,6 +12,11 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     fileprivate let cellId = "cellId"
     
+    let items = [
+        TodayItem.init(category: "LIFE HACK", title: "Utilizing your Time", image: #imageLiteral(resourceName: "garden"), description: "All the tools and apps you need to intelligently organize your life the right way", backgroundColor: .white),
+        TodayItem.init(category: "HOLIDAYS", title: "Travel on a Budget", image: #imageLiteral(resourceName: "holiday"), description: "Find out all you need to know on how to travel without packing everything!", backgroundColor: #colorLiteral(red: 0.9793935418, green: 0.9629215598, blue: 0.7258219123, alpha: 1))
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,9 +37,12 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let appFullscreenController = AppFullscreenController()
-        let redView = appFullscreenController.view!
-        redView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleRemoveRedView)))
-        view.addSubview(redView)
+        appFullscreenController.todayItem = items[indexPath.row]
+        appFullscreenController.dismissHandler = {
+            self.handleRemoveRedView()
+        }
+        let fullScreenView = appFullscreenController.view!
+        view.addSubview(fullScreenView)
         addChild(appFullscreenController)
         
         self.appFullscreenController = appFullscreenController
@@ -46,16 +54,16 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
         
         self.startingFrame = startingFrame
 
-        redView.translatesAutoresizingMaskIntoConstraints = false
-        topConstraint = redView.topAnchor.constraint(equalTo: view.topAnchor, constant: startingFrame.origin.y)
-        leadingConstraint = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: startingFrame.origin.x)
-        widthConstraint = redView.widthAnchor.constraint(equalToConstant: startingFrame.width)
-        heightConstraint = redView.heightAnchor.constraint(equalToConstant: startingFrame.height)
+        fullScreenView.translatesAutoresizingMaskIntoConstraints = false
+        topConstraint = fullScreenView.topAnchor.constraint(equalTo: view.topAnchor, constant: startingFrame.origin.y)
+        leadingConstraint = fullScreenView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: startingFrame.origin.x)
+        widthConstraint = fullScreenView.widthAnchor.constraint(equalToConstant: startingFrame.width)
+        heightConstraint = fullScreenView.heightAnchor.constraint(equalToConstant: startingFrame.height)
         
         [topConstraint, leadingConstraint, widthConstraint, heightConstraint].forEach({$0?.isActive = true})
         self.view.layoutIfNeeded() // start animation
         
-        redView.layer.cornerRadius = 16
+        fullScreenView.layer.cornerRadius = 16
         
         UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
             
@@ -74,20 +82,16 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     var startingFrame: CGRect?
     
-    @objc func handleRemoveRedView(gesture: UITapGestureRecognizer) {
+    @objc func handleRemoveRedView() {
         UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
             
             guard let startingFrame = self.startingFrame else { return }
             
             if startingFrame.origin.y > 350 {
-                print("first")
                 self.appFullscreenController.tableView.contentOffset = .zero
             } else {
-                print("second")
                 self.appFullscreenController.tableView.rowHeight = 450
             }
-            
-            print(startingFrame)
             
             self.topConstraint?.constant = startingFrame.origin.y
             self.leadingConstraint?.constant = startingFrame.origin.x
@@ -101,17 +105,18 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
             }
             
         }, completion: { _ in
-            gesture.view?.removeFromSuperview()
+            self.appFullscreenController.view?.removeFromSuperview()
             self.appFullscreenController.removeFromParent()
         })
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return items.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TodayCell
+        cell.todayItem = items[indexPath.item]
         return cell
     }
     
